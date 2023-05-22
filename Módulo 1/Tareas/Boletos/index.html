@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Venta de boletos</title>
+    <link rel="icon" href="./gato.jpg" type="image/x-icon"> 
+</head>
+
+<body>
+    <h1>Ticket Catser</h1>
+    <h2>¡Reserve sus boletos!: </h2>
+    
+    <form action="desplegar.php" method="post">
+        <fieldset>
+            <legend>Datos del Evento</legend>
+            <label>Nombre: 
+                <input type="text" name="nombre"/>
+            </label>
+            <br>
+            <br>
+
+            <label>Apellido:
+                <input type="text" name="apellido"/>
+            </label>
+            <br>
+            <br>
+
+            <label for="Artista">Artista: </label>
+            <select name="artista">
+                <option value="Héroes del Silencio">Héroes del Silencio</option>
+                <option value="Type O Negative">Type O Negative</option>
+                <option value="Luis Miguel">Luis Miguel</option>
+                <option value="Zoé">Zoé</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="fecha">Fecha del Evento: </label>
+            <input type="date" name="fechita">
+            <br>
+            <br>
+
+            <label for="lugar">Lugar: </label>
+            <select name="espacio">
+                <option value="Foro Sol">Foro Sol</option>
+                <option value="Arena Ciudad de Mexico">Arena Ciudad de México</option>
+                <option value="Palacio de los Deportes">Palacio de los Deportes</option>
+                <option value="Auditorio Nacional">Auditorio Nacional</option> 
+            </select>
+            <br>
+            <br>
+
+            <label for="zona">Zona:</label>
+            <select name="zona_evento">
+                <option value="General A">General A</option>
+                <option value="General B">General B</option>
+                <option value="Gradas Izquierda">Gradas Izquierda</option>
+                <option value="Gradas Derecha">Gradas derecha</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Extras: 
+            <br>
+            <input type="checkbox" name="checkbox[]" value="Pase prematuro">Pase prematuro
+            <br>
+            <input type="checkbox" name="checkbox[]" value="Pase VIP">Pase VIP
+            <br>
+            <input type="checkbox" name="checkbox[]" value="Primera fila">Primera fila
+            </label>
+            <br>
+            <br>
+            <label for="boletos">Número de Boletos: </label>
+                <input type="number" name="num_bole">
+
+            <br>
+            <br>
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+
+    
+</body>

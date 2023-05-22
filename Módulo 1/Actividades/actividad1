@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+    <title>El Corazón</title>
+    <link rel="icon" href="bola.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Partes del Corazón</h1>
+    <img src="corazon.jpg" weight="400" height="400">
+</body>
