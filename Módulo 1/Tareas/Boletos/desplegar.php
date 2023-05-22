@@ -119,19 +119,19 @@
                             switch ($art)
                             {
                                 case 'Héroes del Silencio':
-                                    echo '<img src= "./heroes.jpg" width="" alt="Heroes">';
+                                    echo '<img src= "./heroes.jpg" width="340px" height="320px" alt="Heroes">';
                                     break;
                                 
                                 case "Type O Negative":
-                                    echo '<img src="./typo.jpg" weight="240px" height="240px" alt="Typo">';
+                                    echo '<img src="./typo.jpg" width="340px" height="320px" alt="Typo">';
                                     break;
 
                                 case "Luis Miguel":
-                                    echo '<img src="./luismi.jpg" weight="240px" height="240px" alt="Typo">';
+                                    echo '<img src="./luismi.jpg" width="340px" height="320px" alt="Typo">';
                                     break;
 
                                 case "Zoé":
-                                    echo '<img src="./zoe.jpg" weight="240px" height="240px">';
+                                    echo '<img src="./zoe.jpg" width="340px" height="320px" alt="Zoe">';
                                     break;
                                     //Nomas va el valor deseado entre comillas
                             }echo
@@ -204,19 +204,19 @@
                                     switch ($art)
                                     {
                                         case "Héroes del Silencio":
-                                            echo '<img src="heroes.jpg" weight="240px" height="240px">';
+                                            echo '<img src="heroes.jpg" weight="306px" height="400px">';
                                             break;
                                         
                                         case "Type O Negative":
-                                            echo '<img src="typo.jpg" weight="240px" height="240px">';
+                                            echo '<img src="typo.jpg" weight="430px" height="270px">';
                                             break;
         
                                         case "Luis Miguel":
-                                            echo '<img src="luismi.jpg" weight="240px" height="240px">';
+                                            echo '<img src="luismi.jpg" weight="450px" height="450px">';
                                             break;
         
                                         case "Zoé":
-                                            echo '<img src="zoe.jpg" weight="240px" height="240px">';
+                                            echo '<img src="zoe.jpg" weight="400px" height="225px">';
                                             break;
                                             //Nomas va el valor deseado entre comillas
                                     }echo
@@ -240,19 +240,19 @@
                                 switch ($e)
                                 {
                                     case "Foro Sol":
-                                        echo '<img src="foro.jpg" weight="240px" height="240px">';
+                                        echo '<img src="foro.jpg" width="960px" height="320px" alt="Foro">';
                                         break;
                                     
                                     case "Arena Ciudad de Mexico":
-                                        echo '<img src="arena.jpg" weight="240px" height="240px">';
+                                        echo '<img src="arena.jpg" width="750px" height="565px" alt="Arena">';
                                         break;
         
                                     case "Palacio de los Deportes":
-                                        echo '<img src="palacio.jpg" weight="240px" height="240px">';
+                                        echo '<img src="palacio.jpg" width="800px" height="530px" alt="Palacio">';
                                         break;
         
                                     case "Auditorio Nacional":
-                                        echo '<img src="auditorio.jpg" weight="240px" height="240px">';
+                                        echo '<img src="auditorio.jpg" width="800px" height="450px" alt="Auditorio">';
                                         break;
                                 }echo
                                 '
