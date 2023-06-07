@@ -1,0 +1,283 @@
+/*------------------FONTS------------------*/
+/*usar tus propias fuentes*/
+@font-face
+{
+    font-family: "Organic";
+    src: url('../statics/fonts/Organic\ Brand.ttf');
+    
+}
+
+@font-face
+{
+    font-family: "Clasic";
+    src: url('../statics/fonts/Classica-Book.ttf');
+    
+}
+
+@font-face
+{
+    font-family: "Text";
+    src: url('../statics/fonts/Targa.ttf');
+    
+}
+
+
+/*------------------STRUCTURE------------------*/
+body{
+    font-family: "Text";
+    background-color: #629c62;
+}
+
+
+/*------------------HEADERS------------------*/
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Organic",sans-serif;/*Pones la fuente que creaste + una que quieres que se muestre por defecto*/
+}
+
+h5
+{
+    font-size: 1.5rem;
+}
+
+#header{
+    text-align: center;
+    font-size: 30px;
+    background-color: yellowgreen;
+    font-family: "Clasic",sans-serif;
+    box-shadow: 0px 5px 2px 2px #419247;
+}
+
+#tit
+{
+    background-color: #cac55e;
+    font-family: "Organic", sans-serif;
+    font-size: 3rem;
+}
+
+/*------------------CONTENT------------------*/
+.descripcion
+{
+    background-color: #cac55e;
+    width: 900px;
+    margin-left: 80px;
+    font-size: 25px;
+    border-width: 15px;
+    border-style: double;
+    border-color: #cb670a;
+}
+
+.descripciones
+{
+    padding-inline: 2rem;
+}
+
+.carteles
+{
+    background-color: #cac55e;
+    padding: 2rem;
+    margin: auto;
+    border: 5px solid rosybrown;
+    margin-bottom: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+/*------------------ANIMATED IMG------------------*/
+
+ #mariquita
+{
+    top: 140px;
+    right: 300px;
+    position: absolute;
+    animation-name: pasos; /*name de la animacion. Sirve como referencia  */
+    animation-duration: 7s; /*duracion de la animacion */
+    animation-delay: 0.5s; /*tiempo que se tarda la animacion en iniciar*/
+    animation-timing-function: ease-in-out; /*modifica la velocidad de la accion*/
+    animation-iteration-count: infinite; /*las veces que la aniamcion se va a llevar a cabo*/
+    /*animation-fill-mode:  ; define el modo final del elemento*/
+    animation-direction: alternate; 
+} 
+
+#flor
+{
+    top: 3rem;
+    left: 15rem;
+    position: absolute;
+    animation-name: giro;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#flor1
+{
+    top: 3rem;
+    right: 15rem;
+    position: absolute;
+    animation-name: giro;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#blank1
+{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-left: 5rem;
+    /* position:absolute; */
+}
+
+#blank2
+{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    position:absolute;
+    bottom: -14rem;
+    right: 22rem; 
+}
+
+#pup1
+{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position:absolute;
+    margin-right: 25rem;
+    bottom: -11rem;
+    animation-name: pasito;
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+#pup2
+{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position:absolute;
+    margin-right: 35rem;
+    bottom: -11rem;
+    animation-name: pasito2;
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+#img1
+{
+    animation-name: mediavuelta;
+    animation-duration: 10s; /*duracion de la animacion*/
+    animation-timing-function: linear; /*modifica la velocidad de la accion*/
+    animation-iteration-count: infinite; /*las veces que la aniamcion se va a llevar a cabo*/
+    animation-direction: alternate;
+
+}
+
+#img2
+{
+    animation-name: nose;
+    animation-duration: 10s; /*duracion de la animacion*/
+    animation-timing-function: linear; /*modifica la velocidad de la accion*/
+    animation-iteration-count: infinite; /*las veces que la aniamcion se va a llevar a cabo*/
+    animation-direction: alternate;
+    left: 3rem;
+}
+
+/*------------------ANIMATION------------------*/
+
+@keyframes pasos
+{
+    0%
+    {
+        right: 0rem;
+    }
+    100%
+    {
+        right: 60rem;
+    }
+   
+}
+
+@keyframes giro
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+   
+}
+
+@keyframes pasito
+{
+    0%
+    {
+        right: 0rem; 
+    }
+    100%
+    {
+        right: 3rem ;
+    }
+   
+}
+
+@keyframes pasito2
+{
+    0%
+    {
+        right:0rem;
+    }
+    100%
+    {
+        right:3rem ;
+    }
+   
+} 
+
+@keyframes mediavuelta
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    50%
+    {
+        transform: rotateZ(90deg);
+    }
+    100%
+    {
+        transform: rotateZ(-90deg);
+    }
+   
+}
+
+@keyframes nose
+{
+    0%
+    {
+        transform: scale(0.5);
+    }
+    50%
+    {
+        transform: scale(2);
+    }
+    100%
+    {
+        transform: scale(0.5);
+    }
+}
