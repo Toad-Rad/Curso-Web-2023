@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="icon" href="../statics/img/AAAA.jpg" type="x-icon">
+    <link rel="stylesheet" href="../statics/styles/bootstrap.css">
+</head>
+
+<body>
+    
+    <!-- Principal -->
+    <main>
+        <div class="container my-3">
+            <div class="row">
+                <!-- Formulario -->
+                <div class="col-12 col-md-4">
+                    <section id="formulario">
+                        <h1 class="h1">Añade una tarea</h1>
+                        <form  method="post" src="../dynamics/php/logic.php">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="reproducciones" name="materia"
+                                    placeholder="Descripción" required min="0" autocomplete="off">
+                                <label for="reproducciones" class="form-label">Materia</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="reproducciones" name="descripcion"
+                                    placeholder="Descripción" required min="0" autocomplete="off">
+                                <label for="reproducciones" class="form-label">Descripción</label>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" type="submit">Agregar tarea</button>
+                                <button class="btn btn-light" type="reset">Limpiar</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <section id="ranking">
+                        <div id="contenedorCards">
+                            <h1 class="h1">Tareas Pendientes</h1>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">505</h5>
+                                    <p class="card-text">Arctic Monkeys</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Los Tontos</h5>
+                                    <p class="card-text">C. Tangana</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lane Boy</h5>
+                                    <p class="card-text">Twenty One Pilots</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yo Tengo Un Ángel</h5>
+                                    <p class="card-text">Rels B</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../dynamics/js/script.js"></script>
+</body>
+
+</html>
